@@ -6,6 +6,19 @@ First,I learned basic grammar and practice with playground.
 
 Then I will complete some mini projects,and summarize what I learned from the project.
 
+## Summary
+
+### Project1
+
+* build UI with storyboard,perform segue to transfer parameter
+* more familiar with swift basic grammar，such as  
+  ```optional type``` ```if let...{}``` ```guard let...else{}``` 
+    
+* using ```UITableViewController```directly,less code to me
+* learned the access level in swift,from high to low:  
+  ```open```,```public```,```internal```,```fileprivate```,```private```  
+  the default is ```internal```
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
