@@ -19,6 +19,23 @@ Then I will complete some mini projects,and summarize what I learned from the pr
   ```open```,```public```,```internal```,```fileprivate```,```private```  
   the default is ```internal```
 
+### Project2
+
+* using different kinds of UI controls
+* learned ```enum Optional<Wrapped>```,Cooperate with ```switch```,like:
+  
+  ```
+  switch someOptional {
+  
+  	case .some(let someOptional):
+  	//do something
+  	
+  	case .none:
+  	//do something
+  }
+  ```
+* learned how to use ```extension``` flexibly 
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
