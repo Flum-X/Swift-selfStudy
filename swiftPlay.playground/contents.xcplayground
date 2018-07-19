@@ -11,5 +11,6 @@
         <page name='算法实战-基本语法与技巧'/>
         <page name='算法实战-数组、字符串、集合、字典'/>
         <page name='Codable - Swift4'/>
+        <page name='枚举'/>
     </pages>
 </playground>
