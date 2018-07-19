@@ -31,6 +31,11 @@ class ViewController: UIViewController,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let initCircleButton: (UIButton) -> Void = { button in
+//            button.layer.cornerRadius = 0.5 * button.bounds.size.width
+//            button.backgroundColor = UIColor.white
+//        }
+        
         initCircleButton(playPauseButton)
         initCircleButton(lapRestButton)
         

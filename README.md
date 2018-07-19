@@ -36,6 +36,20 @@ Then I will complete some mini projects,and summarize what I learned from the pr
   ```
 * learned how to use ```extension``` flexibly 
 
+### Project3
+
+* know when to use ```@objc``` in swift code:[@objc in swift - stackoverflow](https://stackoverflow.com/questions/30795117/when-to-use-objc-in-swift-code)
+* learned how to handle with retain cycle in swift using ```weak```、```unowned```  
+  more detail refer to [swifter.tips/retain-cycle](http://swifter.tips/retain-cycle/) 
+* when you initialize a ```Timer``` with ```scheduledTimer``` method,remember to  
+  add the timer to current ```RunLoop```,and use weakself like this:
+    
+  ```
+  unowned let weakself = self  
+  let timer = Timer.scheduledTimer(timeInterval: 0.5, target: weakself, selector: #someSelector, userInfo: nil, repeats: true)  
+  RunLoop.current.add(timer, forMode: .commonModes)
+  ```
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
