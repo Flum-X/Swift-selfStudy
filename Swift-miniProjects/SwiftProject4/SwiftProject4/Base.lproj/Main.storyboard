@@ -29,14 +29,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7L-Ln-2io">
+                                                <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7L-Ln-2io">
                                                     <rect key="frame" x="15" y="11.5" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="aMf-n0-Tab"/>
                                                         <constraint firstAttribute="height" constant="60" id="xMb-3V-efS"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVO-ZB-Pei">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVO-ZB-Pei">
                                                     <rect key="frame" x="93" y="11" width="282" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="PtQ-E2-WSj"/>
@@ -45,7 +45,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-dB-5mu">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-dB-5mu">
                                                     <rect key="frame" x="93" y="51" width="267" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="He7-8X-8Nh"/>
@@ -71,6 +71,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mSY-Wv-DpW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bZn-21-1CN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,6 +93,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="todoTableView" destination="ZeP-Mu-k8E" id="zaS-vK-qTP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,21 +143,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="child"/>
                                         <state key="selected" backgroundImage="child-selected"/>
+                                        <connections>
+                                            <action selector="selectChild:" destination="u0a-Eu-hz7" eventType="touchUpInside" id="J72-3n-g3n"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDI-3Z-Hnp">
                                         <rect key="frame" x="83" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="phone"/>
                                         <state key="selected" backgroundImage="phone-selected"/>
+                                        <connections>
+                                            <action selector="selectPhone:" destination="u0a-Eu-hz7" eventType="touchUpInside" id="rWg-pa-u89"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uma-P6-rS4">
                                         <rect key="frame" x="166" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="shopping-cart"/>
                                         <state key="selected" backgroundImage="shopping-cart-selected"/>
+                                        <connections>
+                                            <action selector="selectShoppingCart:" destination="u0a-Eu-hz7" eventType="touchUpInside" id="50n-Nh-y1G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3e-ge-GMN">
                                         <rect key="frame" x="249" y="0.0" width="50" height="50"/>
                                         <state key="normal" backgroundImage="travel"/>
                                         <state key="selected" backgroundImage="travel-selected"/>
+                                        <connections>
+                                            <action selector="selectTravel:" destination="u0a-Eu-hz7" eventType="touchUpInside" id="Puk-ZW-duk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -166,6 +185,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="tapDone:" destination="u0a-Eu-hz7" eventType="touchUpInside" id="ru9-H2-HK4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,6 +207,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ngx-Mu-ZAa"/>
                     </view>
+                    <connections>
+                        <outlet property="childButton" destination="mlU-GU-CL8" id="oA2-6n-ug7"/>
+                        <outlet property="phoneButton" destination="hDI-3Z-Hnp" id="IBE-Ti-Ktl"/>
+                        <outlet property="shoppingCartButton" destination="Uma-P6-rS4" id="rwZ-MT-JEO"/>
+                        <outlet property="todoDatePicker" destination="hQx-Oa-ORi" id="tP6-mp-EH8"/>
+                        <outlet property="todoTitleField" destination="JUE-lg-P8r" id="7DD-mp-Rwd"/>
+                        <outlet property="travelButton" destination="j3e-ge-GMN" id="WOR-d2-zyx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPt-Vg-4Xx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

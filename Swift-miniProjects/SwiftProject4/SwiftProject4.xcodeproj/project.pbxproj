@@ -13,6 +13,8 @@
 		32A608E321017A1800B36E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A608E221017A1800B36E06 /* Assets.xcassets */; };
 		32A608E621017A1800B36E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A608E421017A1800B36E06 /* LaunchScreen.storyboard */; };
 		32A608EE21017E7000B36E06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A608ED21017E7000B36E06 /* DetailViewController.swift */; };
+		32A608F02101C8A700B36E06 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A608EF2101C8A700B36E06 /* Utils.swift */; };
+		32A608F22101C8BA00B36E06 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A608F12101C8BA00B36E06 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		32A608E521017A1800B36E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A608E721017A1800B36E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A608ED21017E7000B36E06 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		32A608EF2101C8A700B36E06 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		32A608F12101C8BA00B36E06 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				32A608DB21017A1600B36E06 /* AppDelegate.swift */,
 				32A608DD21017A1600B36E06 /* ViewController.swift */,
 				32A608ED21017E7000B36E06 /* DetailViewController.swift */,
+				32A608EF2101C8A700B36E06 /* Utils.swift */,
+				32A608F12101C8BA00B36E06 /* ToDoItem.swift */,
 				32A608DF21017A1600B36E06 /* Main.storyboard */,
 				32A608E221017A1800B36E06 /* Assets.xcassets */,
 				32A608E421017A1800B36E06 /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				32A608EE21017E7000B36E06 /* DetailViewController.swift in Sources */,
 				32A608DE21017A1600B36E06 /* ViewController.swift in Sources */,
+				32A608F22101C8BA00B36E06 /* ToDoItem.swift in Sources */,
 				32A608DC21017A1600B36E06 /* AppDelegate.swift in Sources */,
+				32A608F02101C8A700B36E06 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
