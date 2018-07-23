@@ -46,18 +46,22 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func selectChild(_ sender: Any) {
+        self.resetButtons()
         childButton.isSelected = true
     }
     
     @IBAction func selectPhone(_ sender: Any) {
+        self.resetButtons()
         phoneButton.isSelected = true
     }
     
     @IBAction func selectShoppingCart(_ sender: Any) {
+        self.resetButtons()
         shoppingCartButton.isSelected = true
     }
     
     @IBAction func selectTravel(_ sender: Any) {
+        self.resetButtons()
         travelButton.isSelected = true
     }
     
