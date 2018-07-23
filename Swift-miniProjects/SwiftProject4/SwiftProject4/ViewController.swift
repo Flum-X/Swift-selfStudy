@@ -13,6 +13,8 @@ var todos: [ToDoItem] = []
 
 class ViewController: UIViewController {
 
+    let messageLabel: UILabel = UILabel()
+    
     @IBOutlet weak var todoTableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,6 +27,10 @@ class ViewController: UIViewController {
                  ToDoItem(id: "3", image: "phone-selected", title: "Phone to Jobs", date: dateFromString("2017-10-30")!),
                  ToDoItem(id: "4", image: "travel-selected", title: "Plan to Europe", date: dateFromString("2017-10-31")!)
         ]
+        
+        setMessageLabel(messageLabel, frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height), text: "No data is currently available.", textColor: UIColor.black, numberOfLines: 0, textAlignment: NSTextAlignment.center, font: UIFont(name:"Palatino-Italic", size: 20)!)
+        
+        self.todoTableView.backgroundView = messageLabel
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -67,15 +73,12 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if todos.count != 0 {
+            self.todoTableView.backgroundView?.isHidden = true
+            self.todoTableView.separatorStyle = UITableViewCellSeparatorStyle.singleLine
             return todos.count
         } else {
-            let messageLabel: UILabel = UILabel()
-            
-            setMessageLabel(messageLabel, frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height), text: "No data is currently available.", textColor: UIColor.black, numberOfLines: 0, textAlignment: NSTextAlignment.center, font: UIFont(name:"Palatino-Italic", size: 20)!)
-            
-            self.todoTableView.backgroundView = messageLabel
+            self.todoTableView.backgroundView?.isHidden = false
             self.todoTableView.separatorStyle = UITableViewCellSeparatorStyle.none
-            
             return 0
         }
     }
