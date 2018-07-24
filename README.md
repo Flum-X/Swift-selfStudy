@@ -49,6 +49,31 @@ Then I will complete some mini projects,and summarize what I learned from the pr
   let timer = Timer.scheduledTimer(timeInterval: 0.5, target: weakself, selector: #someSelector, userInfo: nil, repeats: true)  
   RunLoop.current.add(timer, forMode: .commonModes)
   ```
+  
+### Project4
+
+* learned how to use the global variable in swift,like ```todos: [ToDoItem]``` in this project
+* Be familiar with ```UITableView``` edit mode and ```UITableViewDelegate``` methods,such as
+    
+  ```
+  // Delete the cell
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            todos.remove(at: (indexPath as NSIndexPath).row)
+            todoTableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
+    
+  // Move the cell
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return self.isEditing;
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let todo = todos.remove(at: (sourceIndexPath as NSIndexPath).row)
+        todos.insert(todo, at: (destinationIndexPath as NSIndexPath).row)
+    }  
+  ```
 
 ## Resource
 
