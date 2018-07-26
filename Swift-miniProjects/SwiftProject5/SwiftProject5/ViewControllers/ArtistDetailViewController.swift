@@ -36,7 +36,7 @@ extension ArtistDetailViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WorkTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCell", for: indexPath) as! WorkTableViewCell
         
         let work = selectedArtist.works[indexPath.row]
         
