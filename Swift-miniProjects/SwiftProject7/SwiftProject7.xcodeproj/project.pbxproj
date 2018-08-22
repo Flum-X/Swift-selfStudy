@@ -8,21 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		20948CD9212D647800A4D7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CD8212D647800A4D7B5 /* AppDelegate.swift */; };
-		20948CDB212D647800A4D7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CDA212D647800A4D7B5 /* ViewController.swift */; };
 		20948CDE212D647800A4D7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20948CDC212D647800A4D7B5 /* Main.storyboard */; };
 		20948CE0212D647900A4D7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20948CDF212D647900A4D7B5 /* Assets.xcassets */; };
 		20948CE3212D647900A4D7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20948CE1212D647900A4D7B5 /* LaunchScreen.storyboard */; };
+		20948CEB212DA42D00A4D7B5 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CEA212DA42D00A4D7B5 /* LibraryAPI.swift */; };
+		20948CED212DA43F00A4D7B5 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CEC212DA43F00A4D7B5 /* PersistencyManager.swift */; };
+		20948CEF212DA46500A4D7B5 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CEE212DA46500A4D7B5 /* MasterTableViewController.swift */; };
+		20948CF1212DA47E00A4D7B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CF0212DA47E00A4D7B5 /* DetailViewController.swift */; };
+		20948CF3212DA4CC00A4D7B5 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CF2212DA4CC00A4D7B5 /* Pokemon.swift */; };
+		20948CF5212DA4F900A4D7B5 /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CF4212DA4F900A4D7B5 /* MasterTableViewCell.swift */; };
+		20948CF7212DA54500A4D7B5 /* PokemonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CF6212DA54500A4D7B5 /* PokemonConstants.swift */; };
+		20948CF9212DA55900A4D7B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20948CF8212DA55900A4D7B5 /* Constants.swift */; };
 		AB26666A057BBA1FF2CF882D /* Pods_SwiftProject7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B1E2610D931A75D6F07AF8 /* Pods_SwiftProject7.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20948CD5212D647800A4D7B5 /* SwiftProject7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20948CD8212D647800A4D7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20948CDA212D647800A4D7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20948CDD212D647800A4D7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20948CDF212D647900A4D7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20948CE2212D647900A4D7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20948CE4212D647900A4D7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20948CEA212DA42D00A4D7B5 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		20948CEC212DA43F00A4D7B5 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		20948CEE212DA46500A4D7B5 /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		20948CF0212DA47E00A4D7B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		20948CF2212DA4CC00A4D7B5 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		20948CF4212DA4F900A4D7B5 /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		20948CF6212DA54500A4D7B5 /* PokemonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonConstants.swift; sourceTree = "<group>"; };
+		20948CF8212DA55900A4D7B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		327E15D866CDE422C757C2D3 /* Pods-SwiftProject7.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject7.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject7/Pods-SwiftProject7.release.xcconfig"; sourceTree = "<group>"; };
 		9FA112F0588192513F8C1441 /* Pods-SwiftProject7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProject7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProject7/Pods-SwiftProject7.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B1E2610D931A75D6F07AF8 /* Pods_SwiftProject7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProject7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,13 +76,60 @@
 			isa = PBXGroup;
 			children = (
 				20948CD8212D647800A4D7B5 /* AppDelegate.swift */,
-				20948CDA212D647800A4D7B5 /* ViewController.swift */,
+				20948CFA212DA58300A4D7B5 /* API */,
+				20948CFB212DA59A00A4D7B5 /* Controller */,
+				20948CFC212DA5AF00A4D7B5 /* Model */,
+				20948CFD212DA5B700A4D7B5 /* Cell */,
+				20948CFE212DA5C000A4D7B5 /* Helper */,
 				20948CDC212D647800A4D7B5 /* Main.storyboard */,
 				20948CDF212D647900A4D7B5 /* Assets.xcassets */,
 				20948CE1212D647900A4D7B5 /* LaunchScreen.storyboard */,
 				20948CE4212D647900A4D7B5 /* Info.plist */,
 			);
 			path = SwiftProject7;
+			sourceTree = "<group>";
+		};
+		20948CFA212DA58300A4D7B5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				20948CEA212DA42D00A4D7B5 /* LibraryAPI.swift */,
+				20948CEC212DA43F00A4D7B5 /* PersistencyManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		20948CFB212DA59A00A4D7B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20948CEE212DA46500A4D7B5 /* MasterTableViewController.swift */,
+				20948CF0212DA47E00A4D7B5 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20948CFC212DA5AF00A4D7B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20948CF2212DA4CC00A4D7B5 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20948CFD212DA5B700A4D7B5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20948CF4212DA4F900A4D7B5 /* MasterTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		20948CFE212DA5C000A4D7B5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				20948CF6212DA54500A4D7B5 /* PokemonConstants.swift */,
+				20948CF8212DA55900A4D7B5 /* Constants.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		90D9064F6E0B0007617AC122 /* Pods */ = {
@@ -162,16 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftProject7/Pods-SwiftProject7-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -186,15 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftProject7-checkManifestLockResult.txt",
 			);
@@ -210,8 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20948CDB212D647800A4D7B5 /* ViewController.swift in Sources */,
+				20948CEB212DA42D00A4D7B5 /* LibraryAPI.swift in Sources */,
+				20948CEF212DA46500A4D7B5 /* MasterTableViewController.swift in Sources */,
+				20948CF5212DA4F900A4D7B5 /* MasterTableViewCell.swift in Sources */,
+				20948CF1212DA47E00A4D7B5 /* DetailViewController.swift in Sources */,
+				20948CED212DA43F00A4D7B5 /* PersistencyManager.swift in Sources */,
 				20948CD9212D647800A4D7B5 /* AppDelegate.swift in Sources */,
+				20948CF3212DA4CC00A4D7B5 /* Pokemon.swift in Sources */,
+				20948CF7212DA54500A4D7B5 /* PokemonConstants.swift in Sources */,
+				20948CF9212DA55900A4D7B5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +426,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxiong.SwiftProject7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,7 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daxiong.SwiftProject7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
