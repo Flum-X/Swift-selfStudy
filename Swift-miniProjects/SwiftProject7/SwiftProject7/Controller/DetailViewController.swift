@@ -9,7 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameIDLabel: UILabel!
+    @IBOutlet weak var pokeImageView: UIImageView!
+    @IBOutlet weak var pokeInfoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -9,7 +9,11 @@
 import UIKit
 
 class MasterTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var pokeImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

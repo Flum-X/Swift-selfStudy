@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="1JL-dy-9aL">
             <objects>
-                <viewController id="ydj-6X-xb6" sceneMemberID="viewController">
+                <viewController id="ydj-6X-xb6" customClass="DetailViewController" customModule="SwiftProject7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5y-oc-zKo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,8 +52,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="q8E-gH-Xf5"/>
                                         <exclude reference="csM-J7-mDm"/>
+                                        <exclude reference="q8E-gH-Xf5"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -72,6 +72,11 @@
                         <viewLayoutGuide key="safeArea" id="lxP-dX-S2x"/>
                     </view>
                     <navigationItem key="navigationItem" id="7aG-lq-Xeh"/>
+                    <connections>
+                        <outlet property="nameIDLabel" destination="PYt-Ad-W0e" id="P1Z-Wf-R6w"/>
+                        <outlet property="pokeImageView" destination="Qfe-UZ-WyG" id="e4C-ZI-oBd"/>
+                        <outlet property="pokeInfoLabel" destination="zjn-8j-RLV" id="nVf-2A-H5Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFP-Rp-d8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +85,7 @@
         <!--Root View Controller-->
         <scene sceneID="OAS-YG-Jfc">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CRy-FO-sxl" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CRy-FO-sxl" customClass="MasterTableViewController" customModule="SwiftProject7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ydb-SY-RgV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +96,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="155" id="Ksi-Zj-vpp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="155" id="Ksi-Zj-vpp" customClass="MasterTableViewCell" customModule="SwiftProject7" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ksi-Zj-vpp" id="46B-hB-SXU">
@@ -136,6 +141,11 @@
                                         <constraint firstItem="C34-nP-dZd" firstAttribute="leading" secondItem="KV2-es-vqP" secondAttribute="trailing" constant="28" id="vQ7-kr-kn0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="idLabel" destination="PJF-uh-PwN" id="0YP-xI-gmg"/>
+                                    <outlet property="nameLabel" destination="KV2-es-vqP" id="dkO-hH-s7Y"/>
+                                    <outlet property="pokeImageView" destination="C34-nP-dZd" id="8i5-7j-xPT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
