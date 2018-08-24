@@ -154,6 +154,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="BW2-IJ-Hdq"/>
+                    <connections>
+                        <outlet property="searchBar" destination="qnq-Yu-eYb" id="kW0-E8-tRe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBT-iM-H8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
