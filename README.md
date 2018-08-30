@@ -75,6 +75,26 @@ Then I will complete some mini projects,and summarize what I learned from the pr
     }  
   ```
 
+Project5
+
+* I learned closures grammar;
+
+```
+{ (parameters) -> returnType in
+     statements
+}
+``` 
+* Use ```[weak self]``` to solve retain circle problem in closure;
+
+```
+NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange, object: .none, queue: OperationQueue.main) { [weak self] _ in
+			//you should use optional value self? here
+            self?.tableView.reloadData()
+        }
+```
+* I also learned how to enable self-sizing table view cells,as well as how to make them resize on-demand, and support Dynamic Type.For more detail,you can
+read this article [Self-Sizing Table View Cells](https://www.raywenderlich.com/1067-self-sizing-table-view-cells)
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects

@@ -69,10 +69,9 @@ extension ArtistDetailViewController: UITableViewDelegate {
         work.isExpanded = !work.isExpanded
         selectedArtist.works[indexPath.row] = work
         
+        tableView.beginUpdates()
         cell.moreInfoTextView.text = work.isExpanded ? work.info : moreInfoText
         cell.moreInfoTextView.textAlignment = work.isExpanded ? .left : .center
-        
-        tableView.beginUpdates()
         tableView.endUpdates()
         
         tableView.scrollToRow(at: indexPath, at: .top, animated: true)
