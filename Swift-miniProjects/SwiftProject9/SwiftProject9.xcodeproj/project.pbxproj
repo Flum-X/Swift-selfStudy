@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20766EAF21491C9900310244 /* FBMeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20766EAE21491C9900310244 /* FBMeBaseViewController.swift */; };
+		20766EB121491CE900310244 /* FBMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20766EB021491CE900310244 /* FBMeViewController.swift */; };
+		20766EB321491D1800310244 /* FBMeBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20766EB221491D1800310244 /* FBMeBaseCell.swift */; };
 		20BD0362213C08BD003667EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BD0361213C08BD003667EF /* AppDelegate.swift */; };
 		20BD0367213C08BD003667EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BD0365213C08BD003667EF /* Main.storyboard */; };
 		20BD0369213C08BF003667EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BD0368213C08BF003667EF /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20766EAE21491C9900310244 /* FBMeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseViewController.swift; sourceTree = "<group>"; };
+		20766EB021491CE900310244 /* FBMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeViewController.swift; sourceTree = "<group>"; };
+		20766EB221491D1800310244 /* FBMeBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseCell.swift; sourceTree = "<group>"; };
 		20BD035E213C08BD003667EF /* SwiftProject9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProject9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD0361213C08BD003667EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BD0366213C08BD003667EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20766EAD21491C4C00310244 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20BD037D213C162F003667EF /* FBMeUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20766EB421491D1E00310244 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20766EB221491D1800310244 /* FBMeBaseCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		20766EB521491D2A00310244 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				20766EAE21491C9900310244 /* FBMeBaseViewController.swift */,
+				20766EB021491CE900310244 /* FBMeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		20BD0355213C08BD003667EF = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				20BD0361213C08BD003667EF /* AppDelegate.swift */,
-				20BD037D213C162F003667EF /* FBMeUser.swift */,
+				20766EB521491D2A00310244 /* ViewController */,
+				20766EB421491D1E00310244 /* View */,
+				20766EAD21491C4C00310244 /* Model */,
 				20BD0374213C0AD1003667EF /* Helper */,
 				20BD0365213C08BD003667EF /* Main.storyboard */,
 				20BD0368213C08BF003667EF /* Assets.xcassets */,
@@ -153,6 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BD037A213C14AC003667EF /* UIColor+Extension.swift in Sources */,
+				20766EB121491CE900310244 /* FBMeViewController.swift in Sources */,
+				20766EB321491D1800310244 /* FBMeBaseCell.swift in Sources */,
+				20766EAF21491C9900310244 /* FBMeBaseViewController.swift in Sources */,
 				20BD0378213C0B28003667EF /* Specs.swift in Sources */,
 				20BD037E213C162F003667EF /* FBMeUser.swift in Sources */,
 				20BD037C213C154D003667EF /* TableKeys.swift in Sources */,
