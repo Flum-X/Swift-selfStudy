@@ -95,6 +95,42 @@ NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange,
 * I also learned how to enable self-sizing table view cells,as well as how to make them resize on-demand, and support Dynamic Type.For more detail,you can
 read this article [Self-Sizing Table View Cells](https://www.raywenderlich.com/1067-self-sizing-table-view-cells)
 
+Project6
+
+* learened how to use UISearchController;  
+  实际使用场景  
+  1.在UITableView的tableHeaderView中使用，实现类似微信首页搜索的场景  
+  2.在NavigationBar的titleView上使用，实现类似淘宝首页搜索的场景
+  you can also refer to [UISearchController使用指南(Swift)](https://www.jianshu.com/p/1111f279c5a9)
+* Swift Property Observers ```willSet``` and ```didSet```
+
+```
+class MyClass {
+    var date: NSDate {
+        willSet {
+            let d = date
+            print("即将将日期从 \(d) 设定至 \(newValue)")
+        }
+
+        didSet {
+            print("已经将日期从 \(oldValue) 设定至 \(date)")
+        }
+    }
+
+    init() {
+        date = NSDate()
+    }
+}
+
+let foo = MyClass()
+foo.date = foo.date.dateByAddingTimeInterval(10086)
+
+// 输出
+// 即将将日期从 2014-08-23 12:47:36 +0000 设定至 2014-08-23 15:35:42 +0000
+// 已经将日期从 2014-08-23 12:47:36 +0000 设定至 2014-08-23 15:35:42 +0000
+``` 
+
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
