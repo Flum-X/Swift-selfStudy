@@ -45,6 +45,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="r1" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-wR-6GH">
+                                                                <rect key="frame" x="0.0" y="-0.5" width="280" height="380"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
                                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NuC-fE-CDb">
                                                                 <rect key="frame" x="0.0" y="300" width="280" height="80"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yww-aW-QoW">
@@ -70,10 +74,6 @@
                                                                 </constraints>
                                                                 <blurEffect style="extraLight"/>
                                                             </visualEffectView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="r1" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-wR-6GH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="380"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
                                                         </subviews>
                                                     </view>
                                                     <constraints>
@@ -82,8 +82,8 @@
                                                         <constraint firstAttribute="bottom" secondItem="NuC-fE-CDb" secondAttribute="bottom" id="iJr-9f-Wed"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outlet property="featuredImageView" destination="Dtp-wR-6GH" id="sxE-l3-0z4"/>
-                                                        <outlet property="titleLabel" destination="EB7-8M-grj" id="tZA-or-HA1"/>
+                                                        <outlet property="featuredImageView" destination="Dtp-wR-6GH" id="MYV-TN-fXW"/>
+                                                        <outlet property="titleLabel" destination="EB7-8M-grj" id="lTL-4K-eai"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>

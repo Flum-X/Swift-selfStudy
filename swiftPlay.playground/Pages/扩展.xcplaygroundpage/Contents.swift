@@ -92,3 +92,26 @@ extension Int {
 }
 
 123456789[0]
+
+//给已有类添加属性
+
+class User {
+    var firstName:String?
+    var lastName:String?
+}
+
+private var middleNameKey:Void? //关联属性key
+
+extension User {
+    var middleName: String? {
+        
+        get {
+            return objc_getAssociatedObject(self, &middleNameKey) as? String
+        }
+        
+        set {
+            objc_setAssociatedObject(self, &middleNameKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+    }
+}
+
