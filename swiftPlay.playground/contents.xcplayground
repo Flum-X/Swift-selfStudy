@@ -13,5 +13,6 @@
         <page name='Codable - Swift4'/>
         <page name='枚举'/>
         <page name='柯里化函数'/>
+        <page name='Swift 可视化编程'/>
     </pages>
 </playground>
