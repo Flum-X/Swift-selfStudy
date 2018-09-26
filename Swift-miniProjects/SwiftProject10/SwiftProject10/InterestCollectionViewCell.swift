@@ -12,14 +12,13 @@ class InterestCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var featuredImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-
-
-    var interest: Interest {
+    
+    var interest: Interest! {
         didSet {
             updateUI()
         }
     }
-
+    
     fileprivate func updateUI() {
         titleLabel.text = interest.title
         featuredImageView.image = interest.featuredImage
