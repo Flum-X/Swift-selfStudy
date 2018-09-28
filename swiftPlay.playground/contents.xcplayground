@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios'>
     <pages>
-        <page name='属性'/>
+        <page name='字符串和字符'/>
         <page name='基础语法'/>
+        <page name='属性'/>
         <page name='下标'/>
         <page name='错误处理'/>
         <page name='扩展'/>
