@@ -133,6 +133,33 @@ Project7
 * ```RXSwift```框架的初步学习，很好很强大，如果你理解函数式编程思想或者之前有```ReactiveCocoa```经验，应该能够很快上手。这里附上一份```RXSwift```学习文档  
    [RxSwift中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)
 
+Project8
+
+* 主要是一个```tableView```中点击```cell```展开、还原的动态处理
+* 定义了一个```enum```记录cell状态```enum CellState {
+    case expanded
+    case collapsed
+}```
+* ```FeedParser```文件中进行网络请求(```URLSession```)及XML解析(```XMLParserDelegate```)
+
+```
+URLSession.shared.dataTask(with: feedURL, completionHandler: { data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let data = data else {
+                print("No data fetched")
+                return
+            }
+            
+            let parser = XMLParser(data: data)
+            parser.delegate = self
+            parser.parse()
+        }).resume()
+```
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
