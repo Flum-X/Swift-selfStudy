@@ -160,6 +160,56 @@ URLSession.shared.dataTask(with: feedURL, completionHandler: { data, response, e
         }).resume()
 ```
 
+Project9
+
+* 一个经典的展示个人信息的```tableView```页面，cell中设置图片和文字
+* ```typealias```别名，相当于OC中的```typedef```  
+ 
+examples:
+
+```
+//计算二维平面上的距离和位置的时候,用 Double 来表示距离,用 CGPoint 来表示位置  
+typealias Location = CGPoint
+typealias Distance = Double
+
+func distanceBetweenPoint(point: Location, toPoint: Location) -> Double {
+        let dx = Double(toPoint.x - point.x)
+        let dy = Double(toPoint.y - point.y)
+        return sqrt(dx*dx + dy*dy)
+    }
+let origin: Location = CGPoint(x: 0,y: 0)
+let point: Location = CGPoint(x:1 , y: 1)
+let distance: Distance = distanceBetweenPoint(origin, toPoint: point)
+print(distance)//1.4142135623731
+```
+```
+//用typealias来定义闭包
+typealias sendValueClosure = (sendString: String) -> Void//声明
+var callBackString: sendValueClosure?//持有
+self.callBackString!(sendString: self.nameString)//调用
+```
+* 定义了一些```fileprivate ```文件私有方法增强代码的可读性
+
+```
+fileprivate func rows(at section: Int) -> [Any] {
+        return tableViewDataSource[section][TableKeys.Rows] as! [Any]
+    }
+```
+* ```convenience```便利构造器  
+
+> 构造器之间的代理调用规则：  
+规则 1  
+指定构造器必须调用其直接父类的的指定构造器。  
+规则 2  
+便利构造器必须调用同类中定义的其它构造器。  
+规则 3  
+便利构造器最后必须调用指定构造器。  
+方便记忆可以这么记：  
+* 指定构造器必须总是向上代理  
+* 便利构造器必须总是横向代理
+
+
+
 ## Resource
 
 Refer to  [故胤道长](https://twitter.com/guyindaozhang)的[Swift-30-Projects
