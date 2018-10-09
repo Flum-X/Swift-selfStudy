@@ -197,6 +197,12 @@ fileprivate func rows(at section: Int) -> [Any] {
 ```
 * ```convenience```便利构造器  
 
+```
+convenience init(r: Int, g: Int, b: Int, a: CGFloat) {
+        self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: a)
+    }
+```  
+
 > 构造器之间的代理调用规则：  
 规则 1  
 指定构造器必须调用其直接父类的的指定构造器。  
