@@ -214,6 +214,10 @@ convenience init(r: Int, g: Int, b: Int, a: CGFloat) {
 * 指定构造器必须总是向上代理  
 * 便利构造器必须总是横向代理
 
+Project10
+
+* UIVisualEffectView的使用
+* 熟悉UICollectionView的使用
 
 
 ## Resource
