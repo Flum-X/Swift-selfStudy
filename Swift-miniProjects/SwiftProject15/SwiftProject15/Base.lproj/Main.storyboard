@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftProject15" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cL7-t8-i87">
+                                <rect key="frame" x="100" y="220" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZUH-7o-smw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="j7R-Z0-apN">
+                                <rect key="frame" x="147.5" y="285" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="PSX-b3-yfA"/>
+                                    <constraint firstAttribute="height" constant="20" id="e9C-oS-Cbo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-Iu-ewB">
+                                <rect key="frame" x="177.5" y="285" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5uc-di-HdU"/>
+                                    <constraint firstAttribute="width" constant="20" id="SKq-Hl-5SC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="gDn-cb-FQG">
+                                <rect key="frame" x="207.5" y="285" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4bW-3E-qhS"/>
+                                    <constraint firstAttribute="width" constant="20" id="LsO-5U-P8x"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1B6-Iu-ewB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="32s-Wj-jnw"/>
+                            <constraint firstItem="gDn-cb-FQG" firstAttribute="top" secondItem="cL7-t8-i87" secondAttribute="bottom" constant="15" id="8rG-q5-qJv"/>
+                            <constraint firstItem="1B6-Iu-ewB" firstAttribute="top" secondItem="cL7-t8-i87" secondAttribute="bottom" constant="15" id="D2u-yU-myx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cL7-t8-i87" secondAttribute="trailing" constant="100" id="MqJ-gJ-tIV"/>
+                            <constraint firstItem="j7R-Z0-apN" firstAttribute="top" secondItem="cL7-t8-i87" secondAttribute="bottom" constant="15" id="hac-VQ-hGP"/>
+                            <constraint firstItem="cL7-t8-i87" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kcP-bP-Zz9"/>
+                            <constraint firstItem="cL7-t8-i87" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="nzc-iL-9W6"/>
+                            <constraint firstItem="1B6-Iu-ewB" firstAttribute="leading" secondItem="j7R-Z0-apN" secondAttribute="trailing" constant="10" id="th0-np-Ykj"/>
+                            <constraint firstItem="gDn-cb-FQG" firstAttribute="leading" secondItem="1B6-Iu-ewB" secondAttribute="trailing" constant="10" id="uuA-TY-SPP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dotOne" destination="j7R-Z0-apN" id="4xk-6u-bVw"/>
+                        <outlet property="dotThree" destination="gDn-cb-FQG" id="N9J-mp-k0q"/>
+                        <outlet property="dotTwo" destination="1B6-Iu-ewB" id="4Uw-Eg-EMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dot" width="54" height="54"/>
+        <image name="logo" width="402" height="112"/>
+    </resources>
+</document>
